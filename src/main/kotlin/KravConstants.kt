@@ -26,3 +26,9 @@ enum class WcagPrinsipp(val prinsipp: String) {
   forstaelig("3. Forståelig"),
   robust("4. Robust")
 }
+
+enum class KravStatus(val status: String) {
+  nytt("Nytt"),
+  gjeldande("Gjeldande"),
+  utgaatt("Utgått")
+}

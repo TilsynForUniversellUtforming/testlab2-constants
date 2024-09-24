@@ -8,7 +8,7 @@ enum class Kontrolltype {
   @JsonProperty("uttalesak") Uttalesak,
 }
 
-enum class Sakstype(val sakstype: String) {
-  Forvaltningssak("forvaltningssak"),
-  Arkiv("arkivsak")
+enum class Sakstype {
+  @JsonProperty("forvaltningssak") Forvaltningssak,
+  @JsonProperty("arkivsak") Arkivsak
 }

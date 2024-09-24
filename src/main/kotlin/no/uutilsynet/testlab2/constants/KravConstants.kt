@@ -1,3 +1,5 @@
+package no.uutilsynet.testlab2.constants
+
 enum class WcagSamsvarsnivaa(val nivaa: String) {
   A("A"),
   AA("AA"),

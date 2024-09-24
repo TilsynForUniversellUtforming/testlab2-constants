@@ -1,3 +1,5 @@
+package no.uutilsynet.testlab2.constants
+
 enum class TestresultatUtfall {
   samsvar,
   brot,
@@ -30,4 +32,10 @@ enum class TestregelStatus(val value: String) {
   klar_for_kvalitetssikring("klar_for_kvalitetssikring"),
   publisert("publisert"),
   utgaar("utgaar"),
+}
+
+enum class TestlabLocale(val value: String) {
+  nn("nn"),
+  nb("nb"),
+  en("en"),
 }

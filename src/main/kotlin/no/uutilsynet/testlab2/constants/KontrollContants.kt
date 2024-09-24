@@ -1,3 +1,5 @@
+package no.uutilsynet.testlab2.constants
+
 import com.fasterxml.jackson.annotation.JsonProperty
 
 enum class Kontrolltype {

@@ -44,6 +44,11 @@
             <artifactId>jackson-module-kotlin</artifactId>
             <version>2.16.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
     <build>

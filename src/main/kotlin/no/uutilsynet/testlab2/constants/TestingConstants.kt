@@ -33,9 +33,3 @@ enum class TestregelStatus(val value: String) {
   publisert("publisert"),
   utgaar("utgaar"),
 }
-
-enum class TestlabLocale(val value: String) {
-  nn("nn"),
-  nb("nb"),
-  en("en"),
-}

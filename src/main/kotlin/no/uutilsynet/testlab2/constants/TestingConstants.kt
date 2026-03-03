@@ -12,7 +12,8 @@ enum class TestregelModus(val value: String) {
   automatisk("automatisk"),
   semiAutomatisk("semi-automatisk"),
   manuell("manuell"),
-  forenklet("forenklet")
+  forenklet("forenklet"),
+  deque("deque"),
 }
 
 enum class TestregelInnholdstype(val value: String) {
@@ -32,4 +33,9 @@ enum class TestregelStatus(val value: String) {
   klar_for_kvalitetssikring("klar_for_kvalitetssikring"),
   publisert("publisert"),
   utgaar("utgaar"),
+}
+
+enum class TestgrunnlagType {
+  OPPRINNELEG_TEST,
+  RETEST
 }

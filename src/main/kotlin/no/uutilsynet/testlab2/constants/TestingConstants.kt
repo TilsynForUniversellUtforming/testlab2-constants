@@ -14,6 +14,7 @@ enum class TestregelModus(val value: String) {
   manuell("manuell"),
   forenklet("forenklet"),
   deque("deque"),
+  manuellForenkla("manuell-forenkla"),
 }
 
 enum class TestregelInnholdstype(val value: String) {

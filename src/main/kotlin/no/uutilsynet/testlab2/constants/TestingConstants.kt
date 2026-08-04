@@ -1,5 +1,7 @@
 package no.uutilsynet.testlab2.constants
 
+import com.fasterxml.jackson.annotation.JsonProperty
+
 enum class TestresultatUtfall {
   samsvar,
   brot,
@@ -10,11 +12,11 @@ enum class TestresultatUtfall {
 
 enum class TestregelModus(val value: String) {
   automatisk("automatisk"),
-  semiAutomatisk("semi-automatisk"),
+  @JsonProperty("semi-automatisk") semiAutomatisk("semi-automatisk"),
   manuell("manuell"),
   forenklet("forenklet"),
   deque("deque"),
-  manuellForenkla("manuell-forenkla"),
+  @JsonProperty("manuell-forenkla") manuellForenkla("manuell-forenkla"),
 }
 
 enum class TestregelInnholdstype(val value: String) {

@@ -10,11 +10,11 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo
     JsonSubTypes.Type(value = ManuellForenklaTestregelDefinition::class, name = "manuell-forenkla"))
 interface ITestregelDefinition
 
-class StringTestregelDefinition(val body: String) : ITestregelDefinition
+data class StringTestregelDefinition(val body: String) : ITestregelDefinition
 
-class QualwebTestregelDefinition(val key: String) : ITestregelDefinition
+data class QualwebTestregelDefinition(val key: String) : ITestregelDefinition
 
-class ManuellForenklaTestregelDefinition(
+data class ManuellForenklaTestregelDefinition(
     val description: String,
     val utfall: List<TestregelUtfall>
 ) : ITestregelDefinition

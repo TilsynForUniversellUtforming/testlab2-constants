@@ -16,6 +16,7 @@ data class QualwebTestregelDefinition(val key: String) : ITestregelDefinition
 
 data class ManuellForenklaTestregelDefinition(
     val description: String,
+    val helptext: String?,
     val utfall: List<TestregelUtfall>
 ) : ITestregelDefinition
 

@@ -1,12 +1,9 @@
 package no.uutilsynet.testlab2.validators
 
-
-
-
-import tools.jackson.databind.JsonNode
-import tools.jackson.databind.json.JsonMapper
 import java.net.URI
 import java.net.URL
+import tools.jackson.databind.JsonNode
+import tools.jackson.databind.json.JsonMapper
 
 fun validateOrgNummer(s: String?): Result<String> = runCatching {
   requireNotNull(s) { "Organisasjonsnummer kan ikkje vere null" }

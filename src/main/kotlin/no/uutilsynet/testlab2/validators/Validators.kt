@@ -1,7 +1,10 @@
 package no.uutilsynet.testlab2.validators
 
-import com.fasterxml.jackson.databind.JsonNode
-import com.fasterxml.jackson.databind.ObjectMapper
+
+
+
+import tools.jackson.databind.JsonNode
+import tools.jackson.databind.json.JsonMapper
 import java.net.URI
 import java.net.URL
 
@@ -61,6 +64,6 @@ fun validateURL(s: String): Result<URL> = runCatching {
 }
 
 fun validateJSONString(s: String): Result<JsonNode> = runCatching {
-  val mapper = ObjectMapper()
+  val mapper = JsonMapper()
   mapper.readTree(s)
 }

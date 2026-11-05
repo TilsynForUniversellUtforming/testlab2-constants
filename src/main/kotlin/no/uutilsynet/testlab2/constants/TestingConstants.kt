@@ -7,7 +7,8 @@ enum class TestresultatUtfall {
   brot,
   ikkjeForekomst,
   varsel,
-  ikkjeTesta
+  ikkjeTesta,
+  ikkjeTestbart
 }
 
 enum class TestregelModus(val value: String) {
